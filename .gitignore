@@ -1,0 +1,20 @@
+# 忽略所有__pycache__目录和.venv目录
+__pycache__/
+.venv/
+
+# 忽略所有.pyc文件
+*.pyc
+
+# 忽略所有.pyo文件
+*.pyo
+
+# 忽略config.json
+config.json
+
+# 忽略所有.log文件
+*.log
+
+# 忽略bgimg.jpg
+bgimg.jpg
+
+LyrebirdResbot.session

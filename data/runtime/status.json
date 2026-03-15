@@ -1,0 +1,207 @@
+{
+  "updated_at": "2026-03-15T14:15:20.257039+08:00",
+  "service": "stopped",
+  "bot": {
+    "status": "stopped",
+    "heartbeat": "2026-03-15T14:15:20.246540+08:00"
+  },
+  "web_admin": {
+    "status": "running",
+    "started_at": "2026-03-15T14:14:13.960009+08:00"
+  },
+  "counters": {
+    "bot_starts": 9
+  },
+  "events": [
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T04:50:24.167359+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T04:50:36.073156+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T04:50:36.082609+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T04:51:00.277059+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T04:51:00.463136+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T04:51:30.415625+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T04:51:32.270214+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T04:51:32.290529+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T04:54:50.396993+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T04:54:50.588536+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T04:55:05.283062+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T04:55:06.948793+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T04:55:06.951972+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T04:58:16.772559+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T04:58:16.873249+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T04:58:24.820147+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T04:58:27.041287+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T04:58:27.044180+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T13:16:43.837685+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T13:16:44.192201+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T13:17:05.381907+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T13:17:07.754800+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T13:17:07.760127+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T13:21:42.525213+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T13:21:42.668211+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T13:32:54.828965+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T13:32:57.293127+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T13:32:57.297716+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T13:34:21.908738+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T13:34:22.012445+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T13:34:33.468749+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T13:34:34.844537+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T13:34:34.851438+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T13:40:44.875617+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T13:40:45.017247+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T14:12:11.465407+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T14:12:15.604845+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T14:12:15.619001+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T14:14:09.899168+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T14:14:10.135189+08:00"
+    },
+    {
+      "name": "bot_starting",
+      "time": "2026-03-15T14:14:18.175244+08:00"
+    },
+    {
+      "name": "bot_started",
+      "time": "2026-03-15T14:14:20.155973+08:00"
+    },
+    {
+      "name": "transfer_notice_loop_started",
+      "time": "2026-03-15T14:14:20.168412+08:00"
+    },
+    {
+      "name": "bot_stopping",
+      "time": "2026-03-15T14:15:19.847671+08:00"
+    },
+    {
+      "name": "bot_stopped",
+      "time": "2026-03-15T14:15:20.256952+08:00"
+    }
+  ],
+  "features": {
+    "translation_enabled": true,
+    "transfer_notice_enabled": true,
+    "tmdb_bg_enabled": false
+  },
+  "translation": {
+    "queue_size": 0,
+    "active_tasks": 0,
+    "provider": "gemini"
+  }
+}

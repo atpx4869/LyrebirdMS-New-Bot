@@ -1,0 +1,8 @@
+pymysql
+requests
+pyrofork
+tgcrypto
+psycopg2-binary
+gemini_srt_translator
+Flask
+redis
