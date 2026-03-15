@@ -606,3 +606,6 @@ docker compose --env-file .env up -d --build
 3. 点击“应用内置 Compose 预设”填好默认数据库地址
 4. 点击“校验当前配置”确认 Telegram / MovieServer / Emby / 数据库都正常
 5. 返回 NAS 重启容器，再测试 `/start`、`/help`、`/status`
+=======
+# LyrebirdMS-New-Bot
+>>>>>>> 3ce580a1c826cd9b6190d9b8f910c0d9298006cd
