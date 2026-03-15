@@ -1,0 +1,72 @@
+services:
+  lyrebirdmsbot:
+    image: ghcr.io/atpx4869/lyrebirdms-new-bot:latest
+    container_name: lyrebirdmsbotNew
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Shanghai
+      CONFIG_PATH: /data/config/config.json
+      BLACKSEEDS_FILE: /data/config/blackseeds.txt
+      LOG_DIR: /data/logs
+      RUNTIME_DIR: /data/runtime
+      SESSION_WORKDIR: /data/runtime/pyrogram
+
+      PROXY_MODE: ${PROXY_MODE:-true}
+      HTTP_PROXY: ${HTTP_PROXY:-}
+      HTTPS_PROXY: ${HTTPS_PROXY:-}
+      NO_PROXY: ${NO_PROXY:-localhost,127.0.0.1,redis,movieserver,emby}
+
+      REQUEST_TIMEOUT: ${REQUEST_TIMEOUT:-30}
+      REQUEST_RETRIES: ${REQUEST_RETRIES:-2}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      LOG_JSON: ${LOG_JSON:-false}
+
+      TRANSFER_NOTICE_ENABLED: ${TRANSFER_NOTICE_ENABLED:-true}
+      TRANSLATION_ENABLED: ${TRANSLATION_ENABLED:-true}
+      TMDB_BG_ENABLED: ${TMDB_BG_ENABLED:-false}
+
+      ADMIN_PANEL_ENABLED: ${ADMIN_PANEL_ENABLED:-true}
+      ADMIN_PANEL_HOST: 0.0.0.0
+      ADMIN_PANEL_PORT: ${ADMIN_PANEL_PORT:-47521}
+      ADMIN_PANEL_TOKEN: ${ADMIN_PANEL_TOKEN:-change-me-now}
+      ADMIN_PANEL_TITLE: ${ADMIN_PANEL_TITLE:-LyrebirdMS Bot 管理面板}
+
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+    volumes:
+      - ./data/config:/data/config
+      - ./data/logs:/data/logs
+      - ./data/runtime:/data/runtime
+      - ./data/redis:/data/redis
+      - /home/PT:/PT
+    ports:
+      - "${ADMIN_PANEL_PORT:-47521}:47521"
+    entrypoint: []
+    command: >
+      bash -lc "python /app/web_admin.py & exec python /app/main.py"
+    stop_grace_period: 30s
+    mem_limit: 1024m
+    cpus: 1.0
+    healthcheck:
+      test: ["CMD", "python", "/app/healthcheck.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  redis:
+    image: redis:7-alpine
+    container_name: lyrebird-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - ./data/redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
