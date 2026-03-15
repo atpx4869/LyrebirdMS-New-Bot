@@ -26,6 +26,7 @@ jobs:
       - name: Set lowercase owner
         id: owner
         run: echo "value=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+        shell: bash
 
       - name: Docker metadata
         id: meta
